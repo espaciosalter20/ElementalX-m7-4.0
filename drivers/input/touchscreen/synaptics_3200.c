@@ -41,6 +41,7 @@
 #include <linux/mfd/pm8xxx/vibrator.h>
 
 #define SYN_I2C_RETRY_TIMES 8
+#define SYN_UPDATE_RETRY_TIMES 5
 #define SHIFT_BITS 10
 #define SYN_WIRELESS_DEBUG
 #define SYN_CALIBRATION_CONTROL
