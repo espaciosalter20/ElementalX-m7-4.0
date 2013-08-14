@@ -191,7 +191,7 @@ cputime64_t pwrtrigger_time[2] = {0, 0};
 int wakesleep_vib = 0;
 int vib_strength = 15;
 static int break_longtap_count = 0;
-int button_timeout = 6;
+int button_timeout = 0;
 #define S2W_START 30
 #define S2W_TIMEOUT 350
 #define S2W_TIMEOUT2 600
@@ -2551,6 +2551,7 @@ static int report_htc_logo_area(int x, int y) {
 			return 1;
 		}
 	}
+	break_longtap_count=1;
 	return 0;
 }
 
